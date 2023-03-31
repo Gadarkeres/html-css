@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+:root{
+    --fontenormal: Verdana, Geneva, Tahoma, sans-serif;
+    --fontenorand:'Alkatra', cursive;
+    --fontehand:'Handlee', cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+    
 }
 
 html, body{
     min-height: 100%;
     background-color: darkgray;
+    font-family: var(--fontenormal);
 }
 
     header{
@@ -19,10 +30,15 @@ html, body{
     header > h1{
         padding-top: 50px;
         text-transform: uppercase;
+        font-family:var(--fontenormal);
+        font-size: 2.5em;
+       
     }
 
         header > p{
             padding-bottom: 50px;
+            font-family: var(--fontenorand);
+            font-size: 1.2em;
         }
 
         a{
@@ -39,12 +55,15 @@ html, body{
             padding-bottom: 10vh;
             line-height: 2em;
             padding-left: 30px;
+            font-family: var(--fontehand);
+            font-size: 1.5em;
+            font-weight: bold;
 
         }
 
         section.normal{
             background-color: white;
-            color:black
+            color:black;
         }
 
         section.imagem{
@@ -55,6 +74,8 @@ html, body{
         section.imagem > p{
             background-color: rgba(0, 0, 0, 0.233);
             width: 400px;
+            padding: 10px;
+            border-radius: 10px;
         }
 
         footer{
@@ -62,6 +83,7 @@ html, body{
             text-align: center;
             color:white;
             padding: 10px;
+            font-size: 0.9em;
             
         }
 
